@@ -1,0 +1,11 @@
+#anchorPane {
+    -fx-background-color: linear-gradient(#FFFF99, #FFFF66);
+}
+
+#surfaceRectangle {
+    -fx-opacity: 1;
+}
+
+#perimetreRectangle {
+    -fx-opacity: 1;
+}

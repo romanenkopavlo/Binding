@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="719.0" stylesheets="@../../../appstyle/css.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.rectangle.Controller">
+   <TextField fx:id="hauteurRectangle" layoutX="38.0" layoutY="128.0" prefHeight="40.0" prefWidth="94.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></TextField>
+   <TextField fx:id="largeurRectangle" layoutX="38.0" layoutY="303.0" prefHeight="40.0" prefWidth="94.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></TextField>
+   <Label layoutX="38.0" layoutY="89.0" prefHeight="18.0" prefWidth="85.0" text="Hauteur">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font></Label>
+   <Label layoutX="38.0" layoutY="269.0" prefHeight="18.0" prefWidth="70.0" text="Largeur">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font></Label>
+   <Label layoutX="202.0" layoutY="145.0" prefHeight="27.0" prefWidth="86.0" text="Perimetre">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font></Label>
+   <TextField fx:id="perimetreRectangle" layoutX="202.0" layoutY="179.0" prefHeight="40.0" prefWidth="118.0" stylesheets="@../../../appstyle/css.css">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></TextField>
+   <TextField fx:id="surfaceRectangle" layoutX="202.0" layoutY="277.0" prefHeight="40.0" prefWidth="118.0" stylesheets="@../../../appstyle/css.css">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></TextField>
+   <Label layoutX="202.0" layoutY="243.0" prefHeight="18.0" prefWidth="70.0" text="Surface">
+      <font>
+         <Font name="Comic Sans MS Bold" size="18.0" />
+      </font></Label>
+   <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="#f300ff" layoutX="335.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" />
+   <Slider fx:id="sliderHauteur" layoutX="14.0" layoutY="32.0" orientation="VERTICAL" />
+   <Slider fx:id="sliderLargeur" layoutX="14.0" layoutY="212.0" orientation="VERTICAL" />
+</AnchorPane>
