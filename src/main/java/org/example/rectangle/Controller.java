@@ -61,6 +61,14 @@ public class Controller implements Initializable {
         sliderLargeur.setMax(350);
         sliderLargeur.valueProperty().bindBidirectional(largeur);
 
+        sliderHauteur.visibleProperty().bind(Bindings.when(hauteur.greaterThan(450))
+                .then(false)
+                .otherwise(true));
+
+        sliderLargeur.visibleProperty().bind(Bindings.when(largeur.greaterThan(350))
+                .then(false)
+                .otherwise(true));
+
         perimetreRectangle.backgroundProperty().bind(Bindings.when(perimetreProperty().greaterThan(SEUIL_P))
                 .then(new Background(new BackgroundFill(Color.RED, null, null)))
                 .otherwise(new Background(new BackgroundFill(Color.AQUA, null, null))));
